@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mind Mate</title>
+    <link rel="stylesheet" type="text/css" href="arc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        window.onload = function changeScore(){
+            
+            let finalScore = localStorage.getItem("inputScore");
+
+            document.getElementById('finalans').innerHTML = "Score : "+finalScore+"/32";
+        }
+    </script>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="about.html">About Us</a>
+        <a href="#">FAQs</a>
+        <a href="https://988lifeline.org/talk-to-someone-now/">Help Line</a>
+        <a href="#">Contact Us</a>
+      </div>
+    
+      <div class="header">
+        <div class="navbar" onclick="openNav()">
+
+            <a href="#" class="nav">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </a>
+        </div>
+        <div class="main-container">
+            <a href="index.html" class="main">MindMate</a>
+        </div>
+
+    </div>
+    <hr>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("navbar").style.marginRight = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("navbar").style.marginRight= "0";
+        }
+        </script>
+
+        <div class="p1">
+            <p>Your Results</p>
+        </div>
+
+        <div class = "p2">
+            <p>Anxiety Test</p>
+        </div>
+
+        
+        <div class = "p3">
+            <p>Moderate Anxiety</p>
+        </div>
+
+        <div class ="rect">
+            <span class= "rectext" id="finalans">
+                Score : x/10
+            </span>
+        </div>
+
+        <div class="c1">
+
+        <div class ="rect1">
+            <h2 class =rectext1>
+                MHA Standard Scale
+            </h2>
+
+            <span class =rectext2>
+                <pre> 
+<span class="numc">1-4:</span> Minimal depression
+
+<span class="numc">1-4:</span> Mild depression
+
+<span class="numc">1-4:</span> Moderate depression
+
+<span class="numc">1-4:</span> Moderately severe depression
+
+<span class="numc">1-4:</span> Severe depression
+                </pre>
+            </span>
+        </div>
+
+        <div >
+            <img class="pich" src="img/image 6.jpg" alt="image should be here">
+        </div>
+
+        </div>
+
+
+
+</body>
+</html>

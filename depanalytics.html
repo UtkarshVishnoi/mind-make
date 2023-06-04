@@ -6,6 +6,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+        window.onload = function changeScore(){
+            
+            let finalScore = localStorage.getItem("inputScore");
+
+            document.getElementById('finalans').innerHTML = "Score : "+finalScore+"/36";
+        }
+    </script>
 </head>
 <body>
 
@@ -59,7 +68,7 @@
         </div>
 
         <div class ="rect">
-            <span class= "rectext">
+            <span class= "rectext" id="finalans">
                 Score : x/10
             </span>
         </div>
