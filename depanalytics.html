@@ -12,20 +12,41 @@
             
             let finalScore = localStorage.getItem("inputScore");
 
-            document.getElementById('finalans').innerHTML = "Score : "+finalScore+"/36";
+            let num = Number.parseFloat(finalScore*(27/36)).toFixed(0);
+
+            document.getElementById('finalans').innerHTML = "Score : "+num+"/27";
+
+
+            if(num>=1 && num<=4){
+                document.getElementById('vart').innerHTML ="Minimal Depression";
+            }
+            else if(num>=5 && num<=9){
+                document.getElementById('vart').innerHTML ="Mild Depression";
+            }
+            else if(num>=10 && num<=14){
+                document.getElementById('vart').innerHTML ="Moderate Depression";
+            }
+            else if(num>=15 && num<=19){
+                document.getElementById('vart').innerHTML ="Moderately severe Depression";
+            }
+            else if(num>=20 && num<=27){
+                document.getElementById('vart').innerHTML ="Severe Depression";
+            }
         }
+
     </script>
 </head>
 <body>
 
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="login.html">Login</a>
+        <a href="dash.html">Dashboard</a>
         <a href="about.html">About Us</a>
-        <a href="#">FAQs</a>
+        <a href="https://www.practo.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand-search-practo-consult&sem=true&gclid=EAIaIQobChMIqYDKheSr_wIV3JNmAh3BZga7EAAYASAAEgKhdPD_BwE">Appointments and Medicines</a>
         <a href="https://www.nimh.nih.gov/health/topics/suicide-prevention">Help Line</a>
         <a href="contact.html">Contact Us</a>
       </div>
-    
       <div class="header">
         <div class="navbar" onclick="openNav()">
 
@@ -64,7 +85,7 @@
 
         
         <div class = "p3">
-            <p>Moderate Depression</p>
+            <p id = "vart">Moderate Depression</p>
         </div>
 
         <div class ="rect">
@@ -84,13 +105,13 @@
                 <pre> 
 <span class="numc">1-4:</span> Minimal depression
 
-<span class="numc">1-4:</span> Mild depression
+<span class="numc">5-9:</span> Mild depression
 
-<span class="numc">1-4:</span> Moderate depression
+<span class="numc">10-14:</span> Moderate depression
 
-<span class="numc">1-4:</span> Moderately severe depression
+<span class="numc">15-19:</span> Moderately severe depression
 
-<span class="numc">1-4:</span> Severe depression
+<span class="numc">20-27:</span> Severe depression
                 </pre>
             </span>
         </div>
