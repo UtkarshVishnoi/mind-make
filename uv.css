@@ -326,3 +326,98 @@ button {
     width: 1280px;
     height: 720px;
 }
+
+.contact-image-container {
+    display: flex;
+}
+
+.contact-image {
+    height: 250px;
+    width: 100%;
+    object-fit:cover;
+}
+
+.contact-text-container {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-text{
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: right;
+    width: 40%;
+}
+
+.num-container {
+    width: 50%;
+}
+
+.rectext2{
+
+
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 318px;
+    height: 347px;
+    left: 179px;
+    top: 438px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.7px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #008ccd;
+
+}
+
+.phone-icon-container {
+   display: inline;
+   vertical-align: middle; 
+}
+
+.phone-icon {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.login-page-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-containter {
+    width: 300px;
+    height: 400px;
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.login-text-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+}
